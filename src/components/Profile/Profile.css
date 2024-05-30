@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 0px;
+    padding: 220px 0 100px 0;
+    background-image: url('../../assets/img/banner-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 20px;
+    height: 780px;
+  }
+  
+  .profile img {
+    flex: 0 0 50%; 
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 150px;
+  }
+  
+  .profile-content {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-left: 100px;
+  }
+  
+  .profile h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .profile h1 span{
+    background: linear-gradient(270deg,#DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .profile p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+  }
+
+  .profile-action{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .profile-resume{
+    padding:15px 25px;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .profile-resume:hover{
+    background: white;
+    color:black;
+    font-weight: 500;
+    border: 2px solid black;
+  }
+
+  @media(max-width:885px){
+    .profile-content{
+        margin-left: 20px;
+    }
+    .profile h{
+        font-size: 60px;
+    }
+    .profile p{
+        font-size: 15px;
+    }
+    .profile-action{
+        font-size: 20px;
+    }
+  }
+
+  @media(max-width:790px){
+    .profile img{
+        width: 300px; 
+        height: 300px;
+    }
+  }
+
+  @media(max-width:690px){
+    .profile img{
+        width: 250px; 
+        height: 250px;
+    }
+  }
+  @media(max-width:630px){
+    .profile img{
+        width: 200px; 
+        height: 200px;
+    }
+  }
+
+  
