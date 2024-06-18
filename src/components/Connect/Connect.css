@@ -1,190 +1,237 @@
-.connect{
+.connect {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:80px;
+    gap: 80px;
     margin: 80px 170px;
     padding: 60px 0 46px 0;
-    margin: 0;
     background: linear-gradient(270deg, #AA367C -5.91%, #4A2FBD 111.58%);
-}
-
-.connect-title{
+  }
+  
+  .connect-title {
     position: relative;
-}
-
-.connect-title h1{
+  }
+  
+  .connect-title h1 {
     padding: 0px 30px;
     font-size: 60px;
     font-weight: 500;
-}
-
-.connect-section{
+  }
+  
+  .connect-section {
     display: flex;
     gap: 150px;
-}
-
-.connect-left{
+  }
+  
+  .connect-left {
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-.connect-left h1{
+  }
+  
+  .connect-left h1 {
     font-size: 60px;
     font-weight: 500;
     background: linear-gradient(270deg,#DF8908 80%,#B415FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.connect-left p{
+  }
+  
+  .connect-left p {
     max-width: 550px;
-    color:#D8D8D8;
+    color: #D8D8D8;
     font-size: 20px;
     line-height: 35px;
-}
-
-.connect-details{
+  }
+  
+  .connect-details {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    color:#D8D8D8;
+    color: #D8D8D8;
     font-size: 22px;
-}
-
-.connect-detail{
+  }
+  
+  .connect-detail {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.connect-right{
+  }
+  
+  .connect-right {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
-}
-
-.connect-right input{
-    width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-  width: 27vw;
-}
-
-.connect-right textarea{
-    width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-  width: 27vw;
-}
-
-.connect form input:focus, .connect-right textarea:focus{
+  }
+  
+  .connect-right input,
+  .connect-right textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+    width: 27vw;
+  }
+  
+  .connect-right input:focus,
+  .connect-right textarea:focus {
     background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-
-.connect form input::placeholder, .connect-right textarea::placeholder{
+    color: #121212;
+  }
+  
+  .connect-right input::placeholder,
+  .connect-right textarea::placeholder {
     font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-
-.connect-submit{
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .connect-submit {
     border: 2px solid white;
     color: white;
     border-radius: 50px;
     background: transparent;
     font-size: 22px;
-    padding:15px 25px;
+    padding: 15px 25px;
     margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.connect-submit:hover{
+  }
+  
+  .connect-submit:hover {
     background: white;
-    color:black;
+    color: black;
     font-weight: 500;
     border: 2px solid black;
-}
-
-.submit-text{
+  }
+  
+  .submit-text {
     display: flex;
     flex-direction: row;
     gap: 10px;
-}
-
-.submit-text .sent-text{
+  }
+  
+  .submit-text .sent-text {
     border: none;
     color: white;
     border-radius: 50px;
     font-size: 20px;
-    padding:17px 25px;
+    padding: 17px 25px;
     margin-bottom: 50px;
     transition: 0.3s;
-}
-
-@media(max-width:885px){
-    .connect{
-        gap:20px;
-        margin: 50px 0px;
-        align-items: start;
+  }
+  
+  @media (max-width: 885px) {
+    .connect {
+      gap: 20px;
+      margin: 50px 0px;
+      align-items: start;
     }
-
-    .connect-title h1{
-        padding-left: 20px;
-        font-size: 50px;
-        font-weight: 600;
+  
+    .connect-title h1 {
+      padding-left: 20px;
+      font-size: 50px;
+      font-weight: 600;
     }
-    .connect-section{
-        flex-direction: column;
-        gap:50px;
+  
+    .connect-section {
+      flex-direction: column;
+      gap: 50px;
     }
-    .connect-left h1{
-        font-size: 54px;
-        margin-left: 20px;
+  
+    .connect-left h1 {
+      font-size: 54px;
+      margin-left: 20px;
     }
-    .connect-left p{
-        font-size: 18px;
+  
+    .connect-left p {
+      font-size: 18px;
     }
-    .connect-details{
-        gap: 20px;
-        margin-left: 20px;
+  
+    .connect-details {
+      gap: 20px;
+      margin-left: 20px;
     }
-    .connect-details img{
-        width: 20px;
+  
+    .connect-details img {
+      width: 20px;
     }
-    .connect-right{
-        gap:10px;
-        margin-left: 20px;
+  
+    .connect-right {
+      gap: 10px;
+      margin-left: 20px;
     }
-    .connect-right input{
-        width: 150%;
+  
+    .connect-right input,
+    .connect-right textarea {
+      width: 100%;
     }
-    .connect-right textarea{
-        width: 150%;
+  
+    .connect-submit {
+      font-size: 20px;
     }
-    .connect-submit{
-        font-size: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .connect {
+      gap: 20px;
+      margin: 30px 15px;
+      align-items: center;
     }
-}
+  
+    .connect-title h1 {
+      padding-left: 10px;
+      font-size: 40px;
+      font-weight: 600;
+    }
+  
+    .connect-section {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .connect-left h1 {
+      font-size: 48px;
+      margin-left: 10px;
+    }
+  
+    .connect-left p {
+      font-size: 16px;
+    }
+  
+    .connect-details {
+      gap: 15px;
+      margin-left: 10px;
+    }
+  
+    .connect-details img {
+      width: 18px;
+    }
+  
+    .connect-right {
+      gap: 8px;
+      margin-left: 10px;
+    }
+  
+    .connect-right input,
+    .connect-right textarea {
+      width: 100%;
+    }
+  
+    .connect-submit {
+      font-size: 18px;
+    }
+  
+    .submit-text .sent-text {
+      font-size: 18px;
+    }
+  }
