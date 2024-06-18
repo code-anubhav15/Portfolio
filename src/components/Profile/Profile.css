@@ -69,7 +69,29 @@
   background: transparent;
   border: 2px solid white;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  text-align: center;
+  display: inline-block;
+}
+
+.profile-resume a {
+  text-decoration: none;
+  color: white;
+  display: block; /* Ensure the anchor takes full width and height */
+  width: 100%;
+  height: 100%;
+}
+
+.profile-resume a:link,
+.profile-resume a:visited,
+.profile-resume a:active,
+.profile-resume a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.profile-resume:hover a {
+  color: #333;
 }
 
 .profile-resume:hover {
