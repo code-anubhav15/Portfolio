@@ -1,195 +1,260 @@
-.skill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:80px;
-    margin: 80px 170px;
-    padding: 60px 0 46px 0;
-    margin: 0;
-    background: url("../../assets/img/color-sharp.png");
-    width:100%;
-    background-repeat: no-repeat;
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 0;
+  background: url("../../assets/img/color-sharp.png");
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
-.skill-title{
-    position: relative;
+.skill-title {
+  position: relative;
 }
 
-.skill-title h1{
-    padding: 0px 30px;
-    font-size: 60px;
-    font-weight: 500;
+.skill-title h1 {
+  padding: 0 30px;
+  font-size: 60px;
+  font-weight: 500;
 }
 
-.skill-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:40px;
-    margin: 30px 50px;
+.skill-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 30px 50px;
 }
 
-.skill-card{
-    border:2px solid white;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50px;
-    box-sizing: border-box;
-    width:419px;
-    height:350px;
-    transition: 0.3s;
+.skill-card {
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  width: 419px;
+  height: 350px;
+  transition: 0.3s;
 }
 
-.skill-card h2{
-    text-align: center;
-    margin-top: 25px;
-    color: white;
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 25px;
+.skill-card h2 {
+  text-align: center;
+  margin-top: 25px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 25px;
 }
 
 .card-icons {
-    display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 40px;
+  cursor: pointer;
+}
+
+.icons-text {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  gap: 8px;
+}
+
+.icons-text::before {
+  content: attr(data-level);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 20px 40px;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.icons-text:hover {
+  transform: scale(1.05);
+}
+
+.icons-text:hover::before {
+  opacity: 1;
+}
+
+.icons-text:hover img,
+.icons-text:hover p {
+  opacity: 0.1;
+}
+
+.icons-text img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  border-radius: 100px;
+}
+
+.icons-text p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 885px) {
+  .skill {
+    gap: 20px;
+    padding: 50px 0;
+  }
+  
+  .skill-title h1 {
+    padding-left: 60px;
+    font-size: 50px;
+  }
+  
+  .skill-content {
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 40px;
-    cursor:pointer;
+    margin: 20px;
+  }
+  
+  .skill-card {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .skill-card h2 {
+    font-size: 20px;
+  }
+  
+  .card-icons {
+    gap: 6px;
+    margin: 15px 20px;
   }
   
   .icons-text {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-items: center;
     margin: 10px;
-    gap: 8px;
+    gap: 4px;
+    font-size: 10px;
   }
+  
   .icons-text::before {
-    content: attr(data-level);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    font-size: 1.2rem;
-    letter-spacing: 0.8px;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50px;
-    padding: 20px 40px;
-    transition: opacity 0.3s;
-    pointer-events: none;
-  }
-  
-  .icons-text:hover {
-    transform: scale(1.05);
-  }
-  
-  .icons-text:hover::before {
-    opacity: 1;
-  }
-  
-  .icons-text:hover img,
-  .icons-text:hover p {
-    opacity: 0.1;
+    font-size: 0.8rem;
+    padding: 20px 30px;
   }
   
   .icons-text img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
-    border-radius: 100px;
+    width: 40px;
+    height: 40px;
   }
   
   .icons-text p {
-    font-size: 1.2rem;
-    color: white;
-    font-weight: 500;
+    font-size: 1.1rem;
   }
-
-@media(max-width:885px){
-    .skill{
-        gap:20px;
-        margin: 50px 0px;
-        align-items: start;
-    }
-    .skill-title h1{
-        padding-left: 60px;
-        font-size: 50px;
-        font-weight: 500;
-    }
-    .skill-content{
-        grid-template-columns: 1fr 1fr;
-    }
-    .skill-card{
-        width:300px;
-        height:300px;
-    }
-    .skill-card h2{
-        font-size: 20px;
-    }
-    .card-icons {
-        gap: 6px;
-        margin: 15px 20px;
-    }
-    .icons-text {
-      margin: 10px;
-      gap: 4px;
-      font-size: 10px;
-    }
-    .icons-text::before {
-      font-size: 0.8rem;
-      padding: 20px 30px;
-    }
-    .icons-text img {
-      width: 40px;
-     height: 40px;
-    }      
-    .icons-text p {
-     font-size: 1.1rem;
-    }
 }
 
-@media(max-width:775px){
-  .skill{
-      gap:20px;
-      margin: 50px 0px;
-      align-items: start;
+@media (max-width: 775px) {
+  .skill {
+    gap: 20px;
+    padding: 50px 0;
   }
-  .skill-title h1{
-      padding-left: 30px;
-      font-size: 40px;
-      font-weight: 500;
+  
+  .skill-title h1 {
+    padding-left: 30px;
+    font-size: 40px;
   }
-  .skill-content{
-      grid-template-columns: 1fr 1fr;
+  
+  .skill-content {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
   }
-  .skill-card{
-      width:250px;
-      height:250px;
+  
+  .skill-card {
+    width: 250px;
+    height: 250px;
   }
-  .skill-card h2{
-      font-size: 18px;
+  
+  .skill-card h2 {
+    font-size: 18px;
   }
+  
   .card-icons {
-      gap: 6px;
-      margin: 15px 20px;
+    gap: 6px;
+    margin: 15px 20px;
   }
+  
   .icons-text {
     margin: 10px;
     gap: 4px;
     font-size: 8px;
   }
+  
   .icons-text::before {
     font-size: 0.6rem;
     padding: 20px 30px;
   }
+  
   .icons-text img {
     width: 30px;
-   height: 30px;
-  }      
+    height: 30px;
+  }
+  
   .icons-text p {
-   font-size: 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .skill {
+    gap: 20px;
+    padding: 30px 0;
+  }
+
+  .skill-title h1 {
+    padding-left: 20px;
+    font-size: 30px;
+  }
+
+  .skill-content {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+
+  .skill-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .skill-card h2 {
+    font-size: 16px;
+  }
+
+  .card-icons {
+    gap: 4px;
+    margin: 10px 10px;
+  }
+
+  .icons-text {
+    margin: 5px;
+    gap: 2px;
+    font-size: 7px;
+  }
+
+  .icons-text::before {
+    font-size: 0.5rem;
+    padding: 15px 20px;
+  }
+
+  .icons-text img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .icons-text p {
+    font-size: 0.8rem;
   }
 }
