@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Profile = () => {
   return (
     <div id='home' className='profile'>
-            <div className='profile-image'>
+      <div className='profile-image'>
         <img src={profile_img} alt="Profile" />
       </div>
       <div className='profile-content'>
@@ -17,7 +17,7 @@ const Profile = () => {
           <AnchorLink className="anchor-link profile-resume" href="#contact">
             Contact Me
           </AnchorLink>
-          <div className="profile-resume">Resume</div>
+          <div className="profile-resume"><a href="https://drive.google.com/file/d/13p0UZR09TaRfI3gahKIlNOAHh9yzfUeq/view" target='_blank'>Resume</a></div>
         </div>
       </div>
     </div>
