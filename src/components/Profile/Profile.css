@@ -59,7 +59,7 @@
   gap: 30px;
   font-size: 24px;
   font-weight: 500;
-  margin:30px auto 50px auto;
+  margin:30px 50px auto;
 }
 
 .profile-resume {
@@ -146,5 +146,7 @@
 
   .profile-action {
     font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
