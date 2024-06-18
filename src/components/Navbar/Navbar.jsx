@@ -69,6 +69,13 @@ const Navbar = () => {
             Projects
           </AnchorLink>
         </li>
+        <div className="sidebar-connect">
+          <AnchorLink href="#contact">
+            <button className="nav-btn">
+              <span>Let’s Connect</span>
+            </button>
+          </AnchorLink>
+        </div>
       </ul>
       <span className="nav-icons">
         <div className="social-icon">
@@ -82,7 +89,7 @@ const Navbar = () => {
             <img src={navIcon3} className="icon" alt="Social Icon 3" />
           </a>
         </div>
-        <div>
+        <div className="nav-connect">
           <AnchorLink href="#contact">
             <button className="nav-btn">
               <span>Let’s Connect</span>
