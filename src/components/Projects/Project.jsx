@@ -10,11 +10,11 @@ const Project = () => {
         <h1>PROJECTS</h1>
         <img src={title_pattern} alt="Pattern"/>
       </div>
-      <div className="project-container">
+{/*       <div className="project-container">
         {project_data.map((project, index) => (
           <img key={index} src={project.imgUrl} alt={`Project ${index + 1}`} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
